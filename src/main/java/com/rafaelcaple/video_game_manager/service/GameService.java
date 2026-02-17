@@ -8,6 +8,7 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -27,6 +28,10 @@ public class GameService {
         game.setRawgId(rawgId);
         game.setStatus(GameEnums.GameStatus.BACKLOG);
         return repo.save(game);
+    }
+
+    public List<Game> listSaved() {
+        return repo.findAll();
     }
 
 }

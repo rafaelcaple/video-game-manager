@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -15,6 +16,10 @@ import java.util.Map;
 public class GameController {
     private final GameService service;
 
+    @GetMapping
+    public ResponseEntity<List<Game>> listSaved (){
+        return ResponseEntity.ok(service.listSaved());
+    }
     @GetMapping("/search")
     public ResponseEntity<Map<String,Object>> searchGames (@RequestParam String query) {
         return ResponseEntity.ok(service.searchGames(query));
