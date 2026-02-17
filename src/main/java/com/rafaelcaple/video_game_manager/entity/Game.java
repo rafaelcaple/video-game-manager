@@ -18,7 +18,7 @@ public class Game {
     @Column (nullable = false)
     private String title;
     @Column(nullable = false, unique = true)
-    private String rawgId;
+    private Integer rawgId;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private GameEnums.GameStatus status;
