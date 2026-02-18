@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rafaelcaple</groupId>
-	<artifactId>video-game-manager</artifactId>
+	<artifactId>game-backlog-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>video-game-manager</name>
-	<description>Sistema de Gerenciamento de Jogos</description>
+	<name>game-backlog-backend</name>
+	<description>Sistema de Backlog de Jogos</description>
 	<url/>
 	<licenses>
 		<license/>
