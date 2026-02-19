@@ -2,7 +2,7 @@
 
 REST API for managing a personal game backlog, integrated with the RAWG Video Games Database API.
 
-# Demo
+# Live Demo
 
 Live demo: [game-backlog-topaz.vercel.app](https://game-backlog-topaz.vercel.app)
 
