@@ -24,10 +24,9 @@ public class RawgClient {
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path("/games")
-                        .queryParam("key",apiKey)
-                        .queryParam("search",query)
+                        .queryParam("key", apiKey)
+                        .queryParam("search", query)
                         .queryParam("exclude_additions", true)
-                        .queryParam("metacritic", "1,100")
                         .queryParam("ordering", "-relevance")
                         .build())
                 .retrieve()
