@@ -1,25 +1,12 @@
-# Game Backlog
+# Game Backlog - Backend
 
-REST API for managing a personal game backlog, integrated with the RAWG Video Games Database API.
+REST API for managing a personal game backlog, integrated with the [Game Backlog Frontend](https://github.com/rafaelcaple/game-backlog).
 
-# Live Demo
+Built to practice REST API development with Spring Boot and full-stack integration between a Java backend and a React frontend.
 
-Live demo: [game-backlog-topaz.vercel.app](https://game-backlog-topaz.vercel.app)
+## Live Demo
 
-![Backlog App Demo](demo.png)
-
-## Frontend Repository
-
-[game-backlog](https://github.com/rafaelcaple/game-backlog) — React frontend integrated with this API.
-
-## Tech Stack
-
-- Java 17
-- Spring Boot 4
-- Spring Data JPA
-- Spring WebFlux (WebClient)
-- H2 (in-memory database)
-- Lombok
+[→ game-backlog-topaz.vercel.app](https://game-backlog-topaz.vercel.app)
 
 ## Endpoints
 
@@ -37,7 +24,28 @@ Live demo: [game-backlog-topaz.vercel.app](https://game-backlog-topaz.vercel.app
 - `PLAYING` - Games you are currently playing
 - `COMPLETED` - Games you have completed
 - `DROPPED` - Games you stopped playing
-  
+
+## Tech Stack
+
+- Java 17
+- Spring Boot
+- Spring Data JPA
+- Spring WebFlux (WebClient)
+- H2 (in-memory database)
+- Lombok
+
+## Frontend Repository
+
+[game-backlog](https://github.com/rafaelcaple/game-backlog) — React frontend integrated with this API.
+
+## Future Implementations
+
+- User authentication with Spring Security and JWT
+- Migrate from H2 to PostgreSQL for persistent storage
+- Individual game lists per user
+- Game rating system
+- Migrate from RAWG to IGDB API for better search
+
 ## How to run
 
 ### Prerequisites
@@ -65,12 +73,3 @@ export RAWG_API_KEY=your_api_key_here
 The API will be available at `http://localhost:8080`
 
 The H2 console is available at `http://localhost:8080/h2-console` (JDBC URL: `jdbc:h2:mem:testdb`)
-
-## Future Implementations
-
-- User authentication with Spring Security and JWT
-- PostgreSQL database for persistent storage
-- Individual game lists per user
-- Game rating system
-- Change to IGDB API for better search mechanic
-
